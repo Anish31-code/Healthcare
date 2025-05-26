@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_4"
+    tools:context=".RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:text="      24*7 Healthcare"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Book Appointment"
+        android:textColor="@color/material_dynamic_primary80"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@android:drawable/gallery_thumb"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawableTint="@color/design_default_color_background"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewAppTitle"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@android:drawable/gallery_thumb"
+        android:drawableLeft="@android:drawable/ic_dialog_email"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextUsername"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@id/editTextEmail"
+        app:layout_constraintEnd_toEndOf="@id/editTextEmail" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@android:drawable/gallery_thumb"
+        android:drawableLeft="@android:drawable/stat_sys_phone_call"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <EditText
+        android:id="@+id/editTextAppFees"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/gallery_thumb"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawableTint="@color/design_default_color_background"
+        android:hint="Fees"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@id/editTextAppFees"
+        app:layout_constraintStart_toStartOf="@id/editTextAppFees"
+        app:layout_constraintTop_toBottomOf="@id/editTextAppFees" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="97dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:text="Select Date"
+        android:textColor="@color/material_dynamic_primary80"
+        app:layout_constraintBottom_toTopOf="@+id/buttonDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees" />
+
+    <Button
+        android:id="@+id/buttonDate"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="40dp"
+        android:text="27/10/2022"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDate" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="87dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Select Time"
+        android:textColor="@color/material_dynamic_primary80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDate" />
+
+    <Button
+        android:id="@+id/buttonTime"
+        android:layout_width="131dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:text="10:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTime" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Register"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonTime"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.6" />
+
+
+    <Button
+        android:id="@+id/buttonDBack"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAppFees"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
